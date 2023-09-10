@@ -1,3 +1,6 @@
+import 'todomvc-common/base.css';
+import 'todomvc-app-css/index.css';
+
 import Application from '@ember/application';
 
 import loadInitializers from 'ember-load-initializers';

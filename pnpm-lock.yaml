@@ -185,6 +185,12 @@ devDependencies:
   stylelint-prettier:
     specifier: ^4.0.2
     version: 4.0.2(prettier@3.0.2)(stylelint@15.10.3)
+  todomvc-app-css:
+    specifier: ^2.4.2
+    version: 2.4.2
+  todomvc-common:
+    specifier: ^1.0.5
+    version: 1.0.5
   typescript:
     specifier: ^5.1.6
     version: 5.1.6
@@ -11050,6 +11056,14 @@ packages:
       extend-shallow: 3.0.2
       regex-not: 1.0.2
       safe-regex: 1.1.0
+    dev: true
+
+  /todomvc-app-css@2.4.2:
+    resolution: {integrity: sha512-ViAkQ7ed89rmhFIGRsT36njN+97z8+s3XsJnB8E2IKOq+/SLD/6PtSvmTtiwUcVk39qPcjAc/OyeDys4LoJUVg==}
+    dev: true
+
+  /todomvc-common@1.0.5:
+    resolution: {integrity: sha512-D8kEJmxVMQIWwztEdH+WeiAfXRbbSCpgXq4NkYi+gduJ2tr8CNq7sYLfJvjpQ10KD9QxJwig57rvMbV2QAESwQ==}
     dev: true
 
   /toidentifier@1.0.1:

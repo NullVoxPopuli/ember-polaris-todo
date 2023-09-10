@@ -1,0 +1,29 @@
+import Todo from './todo';
+
+<template>
+  {{#if @todos.length}}
+    <section class='main'>
+
+      {{#if this.canToggle}}
+        <input
+          id='toggle-all'
+          class='toggle-all'
+          type='checkbox'
+          checked={{this.areAllComplete}}
+          {{on 'change' this.toggleAll}}
+        >
+        <label for='toggle-all'>Mark all as complete</label>
+      {{/if}}
+
+      <ul class='todo-list'>
+        {{#each @todos as |todo|}}
+          <Todo
+            @todo={{todo}}
+            @onStartEditing={{this.disableToggle}}
+            @onFinishEditing={{this.enableToggle}}
+          />
+        {{/each}}
+      </ul>
+    </section>
+  {{/if}}
+</template>
